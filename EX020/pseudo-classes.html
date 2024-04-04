@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        div {
+            background-color: antiquewhite;
+            text-align: center;
+            border: 1px solid black;
+            width: 200px; /*largura*/
+            height: 200px;/*altura*/
+            display: inline-block; /*alinhou ao topo*/
+        }
+        /*O sinal usado para    "class"    em css é . */
+        /*O sinal usado para      "ID"     em css é # */
+        /*O sinal usado para pseudo-classe em css é : */
+
+        div:hover{
+            background-color: rgb(79, 3, 255);
+            color: azure;
+        }
+        /*o hover significa "quando eu passar o mouse por cima"*/
+        /*dentro do parametro ":" tem todas as pseudo-classe OBS: estudar todas depois*/
+
+        #d4:hover{
+            background-color: cadetblue;
+            color: white;
+        }
+
+        #d4 > p {
+            display: none;
+            /*display: none; está ocultado o paragrafo*/
+        }
+
+        #d4:hover > p{
+            display: block;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+
+    <h1>Exemplo de Hover</h1>
+        <div id="d4">
+            passe o mouse aqui 
+                <p>TEXTO ESCONDIDO...</p>
+        </div>
+        <p>
+            FIM DO EXEMPLO  
+        </p>
+</body>
+</html>

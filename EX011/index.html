@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferentes Mídias</title>
+</head>
+
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Utilizando a tag picture</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/Foto_P.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/Foto_M.png" type="image/png">
+        <img src="imagens/Foto_G.png" alt="Imangen Flexivel">
+    </picture>
+    
+
+
+    <h1>Explorando audios</h1>
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/In Eternity We'll Meet - Aakash Gandhi.mp3" type="audio/mpeg">
+        <source src="midia/In Eternity We'll Meet - Aakash Gandhi.ogg" type="audio/ogg">
+        <source src="midia/In Eternity We'll Meet - Aakash Gandhi.wav" type="audio/wav">
+    </audio>
+
+    <p>Se seu navegador não aceita esse tipo de aúdio<a href="midia/In Eternity We'll Meet - Aakash Gandhi.mp3" download="midia/In Eternity We'll Meet - Aakash Gandhi.mp3" type="audio/mpeg"> clique aqui para baixa-lo</a></p>
+
+    <!--OBS: Existe 3 soucers pq se uma n funcionar o navegador tenta a outra e ai por diante. OBS: Estudar o preload em caso de revisão ver a aula 3 do cap 11 (https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-11-aula-3-colocando-audio-no-seu-site/)-->
+
+    <!--Existe 2 tipos de audio Mp3(MPEG), ogg e wav o wav é bem pesado e não recomendado para adicionar em um site-->
+
+    <!--No type é bom relembrar que para cada tipo de arquivo indepedente sé imagen ou audio é bom ver pela iana.org (https://www.iana.org/assignments/media-types/media-types.xhtml)-->
+
+</body>
+</html>
